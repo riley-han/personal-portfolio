@@ -33,7 +33,7 @@ const MyLocation = () => {
     }
   }
 
-  function showPosition(position) {
+  function showPosition(position: any) {
     var latitude = position.coords.latitude
     var longitude = position.coords.longitude
     setMyLocation({ lat: latitude, lng: longitude })
@@ -42,7 +42,7 @@ const MyLocation = () => {
     )
   }
 
-  function showError(error) {
+  function showError(error: any) {
     console.log("Error getting location: " + error.message)
   }
 
